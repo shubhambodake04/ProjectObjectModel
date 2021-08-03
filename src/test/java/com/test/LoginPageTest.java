@@ -13,6 +13,7 @@ import java.io.IOException;
 public class LoginPageTest extends BrowserFactory {
     LoginPage loginPage;
     HomePage homePage;
+
     @BeforeMethod
     public void browserSetup() throws IOException {
         initialisingBrowser("chrome", PropertyManager.getProperties("url"));

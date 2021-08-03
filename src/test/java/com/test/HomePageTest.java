@@ -25,19 +25,19 @@ public class HomePageTest extends BrowserFactory {
         //searchPage=loginPage.loginMe();
     }
 
-    @Test
+    @Test(priority = 1)
     public void verifyProfileButton() throws IOException, InterruptedException {
         profilePage = homePage.profile();
     }
-    @Test
+    @Test(priority = 2)
     public void verifySearchPerson() throws IOException, InterruptedException {
         searchPage= homePage.search();
     }
-    @Test
+    @Test(priority = 3)
     public  void verifyFriendsButton() throws InterruptedException {
          homePage.friendsList();
     }
-    @Test
+    @Test(priority = 4)
     public  void verifyAccountButton() throws InterruptedException, IOException {
         accountPage = homePage.accountButton();
     }

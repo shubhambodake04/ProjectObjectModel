@@ -41,7 +41,8 @@ public class LoginPage  {
     }
 
     public boolean getFacebookLogo(){
-       return facebookLogo.isDisplayed();
+
+        return facebookLogo.isDisplayed();
     }
 
     public HomePage loginMe(String un, String pwd) throws InterruptedException, IOException {
